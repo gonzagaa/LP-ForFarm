@@ -1,0 +1,63 @@
+#contato {
+    background: #ededed;
+    position: relative;
+    overflow: hidden;
+}
+
+#contato span.span {
+    font-size: 1.6rem;
+    color: var(--green);
+    font-weight: 400;
+}
+
+#contato h2 {
+    margin-top: .5rem;
+    font-size: 3rem;
+    color: #000;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+}
+
+#contato .contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contato .contatos p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+#contato .contatos p a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (min-width: 1080px) {
+    section#contato .content {
+        text-align: center;
+    }
+
+    section#contato header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    section#contato header span.span {
+        font-size: 1.8rem;
+    }
+    
+    section#contato header h2 {
+        font-size: 3.5rem;
+    }
+
+    section#contato .contatos p {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,235 @@
+
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    position: relative;
+    background: var(--gradient-white-invert);
+
+}
+
+#home .blush {
+    width: 1500px;
+    height: 1500px;
+    background: radial-gradient(#31C573, transparent 50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top: -50%;
+    right: -50rem;
+    opacity: .15;
+
+    animation: moveblush infinite 4s linear;
+}
+
+#home img.eclipse {
+    position: absolute;
+    width: 70rem;
+    bottom: -20rem;
+    right: -15rem;
+    opacity: .5;
+    animation: eclipse 7s linear infinite;
+}
+
+@keyframes eclipse {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#home .content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .text {
+    margin-top: 9rem;
+}
+
+#home .content img.logo {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#home .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: var(--Gilroy);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#home .content h1 span {
+    font-weight: 700;
+    color: var(--green);
+    font-family: var(--GilroyBold);
+}
+
+#home .content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#home .content a {
+    text-decoration: none;
+}
+
+#home .content a button {
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    background: var(--green);
+    color: var(--color-white);
+    font-weight: 400;
+
+    transition: all 200ms ease-in-out;
+}
+
+#home .content a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+#home .image {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+#home .image img.mobile {
+    width: 90%;
+}
+
+#home .image img.desktop {
+    display: none;
+}
+
+#home .image img.notificacao {
+    display: none;
+}
+
+@media (min-width: 1080px) {  
+    header#home {
+        height: 100vh;
+        padding-block: initial;
+    }
+
+    header#home .text {
+        margin-top: initial;
+    }
+ 
+    header#home .content {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    header#home .content .text img.logo {
+
+    }
+
+    header#home .content .text h1 {
+        font-size: 6rem;
+    }
+
+    header#home .content .text p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    header#home .content .text a button {
+        font-size: 2.5rem;
+        padding: 1rem 4rem;
+    }
+
+    header#home .image {
+        position: relative;
+    }
+
+    header#home .image img.mobile {
+        display: none;
+    }
+
+    header#home .content .image {
+        justify-content: center;
+    }
+    
+    header#home .image img.desktop {
+        display: initial;
+        margin-top: 7.2rem;
+        width: 50%;
+    }
+
+    header#home .image img.notificacao {
+        position: absolute;
+        width: 35%;
+        display: inherit;
+    }
+
+    header#home .image img.notificacao.um {
+        left: 0;
+        bottom: 40%;
+        width: 40%;
+    }
+
+    header#home .image img.notificacao.dois {
+        left: 0;
+        top: 4%;
+        width: 35%;
+    }
+
+    header#home .image img.notificacao.tres {
+        left: 0;
+        bottom: 0;
+        width: 45%;
+    }
+
+    header#home .image img.notificacao.quatro {
+        right: 0;
+        top: 4%;
+        z-index: -1;
+
+        filter: blur(1px);
+        width: 30%;
+    }
+
+    header#home .image img.notificacao.cinco {
+        right: 0;
+        bottom: 40%;
+        z-index: -1;
+
+        filter: blur(1px);
+        width: 25%;
+    }
+
+    header#home .image img.notificacao.seis {
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        filter: blur(1px);
+        width: 25%;
+    }
+}

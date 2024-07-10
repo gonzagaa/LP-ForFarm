@@ -1,0 +1,75 @@
+#depoimentos {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+#depoimentos header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: var(--Gilroy);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#depoimentos header h2 span {
+    font-weight: 700;
+    color: var(--green);
+    font-family: var(--GilroyBold);
+}
+
+#depoimentos .cards {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 2rem;
+}
+
+#depoimentos .cards .card {
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 2px solid #eeeeee;
+    box-shadow: 5px 5px 20px #bebebeb0;
+
+    transition: all 200ms ease-in-out;
+}
+
+#depoimentos .cards .card p {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#depoimentos .cards .card .stars {
+    display: flex;
+    gap: 1rem;
+}
+
+#depoimentos .cards .card .stars img {
+    width: 2rem;
+}
+
+#depoimentos .cards .card h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #4d4d4d;
+}
+
+@media (min-width: 1080px) {
+    section#depoimentos header h2 {
+        font-size: 4.5rem;
+    }
+
+    section#depoimentos .cards {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#depoimentos .cards .card {
+        height: 100%;
+        justify-content: space-between;
+    }
+}

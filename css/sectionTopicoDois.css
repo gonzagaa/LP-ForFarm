@@ -1,0 +1,43 @@
+section#topico.dois {
+    background: var(--gradient-white-invert);
+}
+
+@media (min-width: 1080px) {
+    section#topico.dois .content {
+        grid-template-areas: "A B";
+        margin-left: 0;
+        margin-right: -25rem;
+        gap: 10rem;
+    }
+
+    section#topico.dois .content .text {
+        align-items: start;
+        margin-left: -25rem;
+    }
+
+    section#topico.dois .content .text p {
+        text-align: left;
+        width: 60%;
+    }
+
+    section#topico.dois .content h3 {
+        font-size: 4.5rem;
+        text-align: start;
+        width: 70%;
+    }
+
+    section#topico.dois .content .image {
+        display: flex;
+        justify-content: center;
+        grid-area: A;
+    }
+
+    section#topico.dois .content img.principal {
+        width: 45%;
+    }
+
+    section#topico.dois .content .image ion-icon.um {
+        bottom: 10rem;
+        right: 30rem;
+    }
+}

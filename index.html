@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForFarmDocs - O aplicativo que digitalizou o agro!</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/APP 4FARMMM.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/formfarm logo verde (1).svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Adquira agora</a></li>  
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/formfarm logo verde (1).svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <img class="logo" src="./assets/icone planta formfarm.svg" alt="">
+                    <h1><span>Simplifique</span> a gestão da sua fazenda.</h1>
+                    <p>Com o ForFarmDocs, você pode ter todas as informações da sua fazenda na palma da sua mão.</p>
+
+                    <a href="#"><button>Adquira agora</button></a>
+                </div>
+                <div class="image">
+                    <img class="mobile" src="./assets/mockup principal mobile.webp" alt="">
+                    <img class="desktop" src="./assets/mockup principal.webp" alt="">
+
+                    <img class="notificacao um" src="./assets/notificacoes/notificacao.png" alt="">
+                    <img class="notificacao dois" src="./assets/notificacoes/notificacao (2).png" alt="">
+                    <img class="notificacao tres" src="./assets/notificacoes/notificacao (3).png" alt="">
+                    <img class="notificacao quatro" src="./assets/notificacoes/notificacao (4).png" alt="">
+                    <img class="notificacao grande cinco" src="./assets/notificacoes/notificacao grande (2).png" alt="">
+                    <img class="notificacao grande seis" src="./assets/notificacoes/notificacao grande.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="blush um"></div>
+        <img class="eclipse" src="./assets/eclipse.svg" alt="">
+    </header>
+
+    <section id="topico" class="um">
+        <div class="wrapper">
+            <div class="content">
+                <div data-aos="fade-up-right" class="text">
+                    <h2>Documentos</h2>
+                    <h3>Organize Seus Documentos de Forma Inteligente
+                    </h3>
+                    <p>Com o *Forfarm Docs*, você tem todas as informações da sua fazenda na palma da sua
+                        mão. Organize e acesse facilmente documentos importantes como licenças, relatórios e
+                        contratos. Nossa plataforma foi desenvolvida para tornar a gestão de documentos mais
+                        eficiente, eliminando a necessidade de papelada e reduzindo o tempo gasto com buscas e
+                        organização.
+                        </p>
+                </div>
+
+                <div data-aos="fade-left" class="image">
+                    <img class="principal" src="./assets/mockup documentos.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="topico" class="dois">
+        <div class="wrapper">
+            <div class="content">
+                <div data-aos="fade-up-left" class="text">
+                    <h2>Notificações</h2>
+                    <h3>Avisos e Notificações em Tempo Real</h3>
+                    <p>Nunca mais perca um prazo importante! O *Forfarm Docs* envia avisos e notificações
+                        diretamente para o seu WhatsApp e também dentro do aplicativo, lembrando você sobre
+                        vencimentos de licenças, prazos de renovação e outras obrigações essenciais para a sua
+                        fazenda. Esteja sempre um passo à frente com nossa funcionalidade de notificações
+                        inteligentes</p>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img class="principal" src="./assets/mockup fazendas.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="topico" class="um">
+        <div class="wrapper">
+            <div class="content">
+                <div data-aos="fade-up-right" class="text">
+                    <h2>Embargos</h2>
+                    <h3>Verificação de Embargos Via Mapa</h3>
+                    <p>Acompanhe a situação da sua fazenda em tempo real. Com o *Forfarm Docs*, você pode
+                        visualizar no mapa se a sua fazenda está embargada, facilitando a tomada de decisões e o
+                        planejamento de ações necessárias. A informação precisa e rápida que você precisa para
+                        manter sua fazenda regularizada.</p>
+                </div>
+
+                <div data-aos="fade-left" class="image">
+                    <img class="principal" src="./assets/mockup mapa.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span class="span">OFERTA ESPECIAL!</span>
+
+                    <p>Aproveite nossa oferta de lançamento! O Forfarm Docs está disponível por <span class="price">R$199,90</span>.
+                    Isso mesmo, de <span class="price active">R$250,00</span> por apenas <span class="price">R$199,90</span>. Não perca essa oportunidade de
+                    modernizar a gestão da sua fazenda com um desconto exclusivo.</p>
+
+                    <a href="#"><button>Adquira agora</button></a>
+                </header>
+            </div>
+        </div>
+
+        <div class="mockups">
+            <img class="mockup tres" src="./assets/mockup documentos.webp.png" alt="">
+            <img class="mockup dois" src="./assets/mockup fazendas.webp.png" alt="">
+            <img class="mockup um" src="./assets/mockup principal.webp.png" alt="">
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Por Que Escolher o <span>ForFarm Docs</span>?</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/facilidade.png" alt="">
+                        <h3>Facilidade de Uso</h3>
+                        <p>Interface intuitiva e amigável, acessível a qualquer momento.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/eficiencia.png" alt="">
+                        <h3>Eficiência</h3>
+                        <p>Reduza o tempo gasto com a gestão de documentos e aumente sua produtividade.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/segurancaa.png" alt="">
+                        <h3>Segurança</h3>
+                        <p>Seus documentos armazenados de forma segura e acessíveis apenas por você.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/mobilidade.png" alt="">
+                        <h3>Mobilidade</h3>
+                        <p>Acesse informações importantes da sua fazenda de qualquer lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Confira nossos <span>depoimentos</span></h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/icone citação.png" alt="">
+                        <p>“Desde que comecei a usar o Forfarm Docs, a gestão dos documentos da minha fazenda
+                            nunca foi tão simples. As notificações me ajudam a não perder prazos importantes e o
+                            mapa de embargos é uma ferramenta essencial para mim.”</p>
+                        <div class="stars">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                        </div>
+
+                        <h3>João S., Proprietário Rural.</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icone citação.png" alt="">
+                        <p>“Ter o Forfarm Docs foi uma das melhores decisões que tomei para a minha fazenda. A organização dos documentos e as notificações em tempo real me dão mais segurança e tranquilidade. Ferramenta indispensável!”</p>
+                        <div class="stars">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                        </div>
+
+                        <h3>Carlos R., Proprietário Rural</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icone citação.png" alt="">
+                        <p>“Desde que comecei a usar o aplicativo, economizo muito tempo com a gestão de documentos. As notificações são um diferencial enorme e o suporte é excelente. Super recomendo!”</p>
+                        <div class="stars">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                            <img src="./assets/star.svg" alt="">
+                        </div>
+
+                        <h3>Ana P., Proprietária Rural.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="garanta">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Garanta agora mesmo!</h2>
+                    <p><span>Não perca tempo</span>! Clique no <span>botão abaixo</span> para adquirir o Forfarm Docs com <span>desconto</span> e comece a simplificar a gestão da sua fazenda <span>hoje mesmo</span></p>
+
+                    <a href="#"><button>Compre Agora por <span>R$199,90</span></button></a>
+                </header>
+                
+                <div class="image">
+                    <img src="./assets/mockups (1).webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="wrapper">
+            <header>
+                <span class="span">AJUDA</span>
+                <h2>Precisa de ajuda?</h2>
+            </header>
+
+            <div class="contatos">
+                <p>contato@forfarmdocs.com</p>
+                <p><a target="_blank" href="tel:+55-62-99674-5628">(62) 99674-5628</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - FormFarmDocs</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

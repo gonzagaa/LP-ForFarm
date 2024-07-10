@@ -1,0 +1,124 @@
+#oferta {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#oferta .mockups {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    gap: 3rem;
+}
+
+#oferta img.mockup {
+    width: 60%;
+}
+
+#oferta::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(to right, #dfece4f5, #ccd8d1f3);
+    z-index: -1;
+}
+
+#oferta .content header span.span {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#oferta .content header p {
+    font-size: 2rem;
+    color: #4a4a4a;
+    font-weight: 400;
+
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+#oferta .content header p span.price {
+    font-weight: 600;
+    background-color: var(--green);
+    color: var(--color-white);
+    padding: .4rem;
+    border-radius: 1rem;
+}
+
+#oferta .content header p span.price.active {
+    position: relative;
+    background-color: rgba(255, 0, 0, 0.49);
+    color: #ffffffc8;
+}
+
+#oferta .content header p span.price.active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+
+    transform: rotate(10deg);
+    background-color: rgba(255, 0, 0, 0.49);
+}
+
+#oferta .content header a button {
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    border: none;
+    color: var(--green);
+    font-weight: 500;
+
+    animation: button infinite 3s ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+#oferta .content header a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+@keyframes button {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+@media (min-width: 1080px) {
+    section#oferta .mockups {
+        flex-direction: row;
+    }
+
+    section#oferta img.mockup {
+        width: 40%;
+    }
+
+    #oferta .content header span.span {
+        font-size: 5rem;
+    }
+
+    #oferta .content header p {
+        font-size: 2.4rem;
+    }
+
+    #oferta .content header a button {
+        font-size: 2.5rem;
+    }
+}

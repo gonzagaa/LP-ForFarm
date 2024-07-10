@@ -1,0 +1,100 @@
+#garanta {
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-color);
+}
+
+#garanta .content {
+    padding: 3rem;
+    border-radius: 2rem;
+    background: linear-gradient(to right,  #31C573, #2AAF65);
+}
+
+#garanta header h2 {
+    color: var(--color-white);
+    font-size: 3rem;
+    line-height: 1.2;
+
+    margin-bottom: 1rem;
+}
+
+#garanta header p {
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: 300;
+
+    margin-bottom: 2rem;
+}
+
+#garanta header p span {
+    color: #fff;
+    font-weight: 500;
+}
+
+#garanta header a button {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    border: none;
+    color: var(--green);
+    font-weight: 400;
+
+    animation: button infinite 3s ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+#garanta header a button span {
+    font-weight: 700;
+}
+
+#garanta header a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+@keyframes button {
+    50% {
+        transform: scale(1.05);
+    }
+}
+#garanta .image img {
+    width: 100%;
+    margin-top: 3rem;
+    filter: drop-shadow(5px 5px 20px #0047095f);
+}
+
+@media (min-width: 1080px) {
+    section#garanta .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        padding: 5rem;
+    }
+
+    #garanta .content header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    #garanta .content header h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #garanta .content header p {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+
+    #garanta .content header a button {
+        font-size: 2rem;
+    }
+
+    section#garanta .content .image img {
+        width: 80%;
+        margin-top: 0;
+    }
+}
