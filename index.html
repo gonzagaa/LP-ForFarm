@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForFarmDocs - O aplicativo que digitalizou o agro!</title>
@@ -58,7 +59,7 @@
     <header id="home">
         <div class="wrapper">
             <div class="content">
-                <div class="text">
+                <div class="text" data-aos="fade-up-right">
                     <img class="logo" src="./assets/icone planta formfarm.svg" alt="">
                     <h1><span>Simplifique</span> a gestão da sua fazenda.</h1>
                     <p>Com o ForFarmDocs, você pode ter todas as informações da sua fazenda na palma da sua mão.</p>
@@ -66,8 +67,8 @@
                     <a href="#"><button>Adquira agora</button></a>
                 </div>
                 <div class="image">
-                    <img class="mobile" src="./assets/mockup principal mobile.webp" alt="">
-                    <img class="desktop" src="./assets/mockup principal.webp" alt="">
+                    <img  data-aos="fade-up-left" class="mobile" src="./assets/mockup principal mobile.webp" alt="">
+                    <img  data-aos="fade-up-left" class="desktop" src="./assets/mockup principal.webp" alt="">
 
                     <img class="notificacao um" src="./assets/notificacoes/notificacao.png" alt="">
                     <img class="notificacao dois" src="./assets/notificacoes/notificacao (2).png" alt="">
@@ -147,14 +148,14 @@
     <section id="oferta">
         <div class="wrapper">
             <div class="content">
-                <header>
-                    <span class="span">OFERTA ESPECIAL!</span>
+                <header data-aos="fade-up">
+                    <span data-aos="fade-up" class="span">OFERTA ESPECIAL!</span>
 
-                    <p>Aproveite nossa oferta de lançamento! O Forfarm Docs está disponível por <span class="price">R$199,90</span>.
+                    <p data-aos="fade-up">Aproveite nossa oferta de lançamento! O Forfarm Docs está disponível por <span class="price">R$199,90</span>.
                     Isso mesmo, de <span class="price active">R$250,00</span> por apenas <span class="price">R$199,90</span>. Não perca essa oportunidade de
                     modernizar a gestão da sua fazenda com um desconto exclusivo.</p>
 
-                    <a href="#"><button>Adquira agora</button></a>
+                    <a data-aos="fade-up" href="#"><button>Adquira agora</button></a>
                 </header>
             </div>
         </div>
@@ -169,30 +170,30 @@
     <section id="beneficios">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <h2>Por Que Escolher o <span>ForFarm Docs</span>?</h2>
                 </header>
 
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <img src="./assets/facilidade.png" alt="">
                         <h3>Facilidade de Uso</h3>
                         <p>Interface intuitiva e amigável, acessível a qualquer momento.</p>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <img src="./assets/eficiencia.png" alt="">
                         <h3>Eficiência</h3>
                         <p>Reduza o tempo gasto com a gestão de documentos e aumente sua produtividade.</p>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <img src="./assets/segurancaa.png" alt="">
                         <h3>Segurança</h3>
                         <p>Seus documentos armazenados de forma segura e acessíveis apenas por você.</p>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="flip-left" class="card">
                         <img src="./assets/mobilidade.png" alt="">
                         <h3>Mobilidade</h3>
                         <p>Acesse informações importantes da sua fazenda de qualquer lugar.</p>
@@ -205,12 +206,12 @@
     <section id="depoimentos">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <h2>Confira nossos <span>depoimentos</span></h2>
                 </header>
 
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="fade-up-left" class="card">
                         <img src="./assets/icone citação.png" alt="">
                         <p>“Desde que comecei a usar o Forfarm Docs, a gestão dos documentos da minha fazenda
                             nunca foi tão simples. As notificações me ajudam a não perder prazos importantes e o
@@ -226,7 +227,7 @@
                         <h3>João S., Proprietário Rural.</h3>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up-left" class="card">
                         <img src="./assets/icone citação.png" alt="">
                         <p>“Ter o Forfarm Docs foi uma das melhores decisões que tomei para a minha fazenda. A organização dos documentos e as notificações em tempo real me dão mais segurança e tranquilidade. Ferramenta indispensável!”</p>
                         <div class="stars">
@@ -240,7 +241,7 @@
                         <h3>Carlos R., Proprietário Rural</h3>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up-left" class="card">
                         <img src="./assets/icone citação.png" alt="">
                         <p>“Desde que comecei a usar o aplicativo, economizo muito tempo com a gestão de documentos. As notificações são um diferencial enorme e o suporte é excelente. Super recomendo!”</p>
                         <div class="stars">
@@ -261,14 +262,14 @@
     <section id="garanta">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <h2>Garanta agora mesmo!</h2>
                     <p><span>Não perca tempo</span>! Clique no <span>botão abaixo</span> para adquirir o Forfarm Docs com <span>desconto</span> e comece a simplificar a gestão da sua fazenda <span>hoje mesmo</span></p>
 
                     <a href="#"><button>Compre Agora por <span>R$199,90</span></button></a>
                 </header>
                 
-                <div class="image">
+                <div data-aos="fade-up-left" class="image">
                     <img src="./assets/mockups (1).webp" alt="">
                 </div>
             </div>
@@ -277,12 +278,12 @@
 
     <section id="contato">
         <div class="wrapper">
-            <header>
+            <header data-aos="fade-up">
                 <span class="span">AJUDA</span>
                 <h2>Precisa de ajuda?</h2>
             </header>
 
-            <div class="contatos">
+            <div  data-aos="fade-up" class="contatos">
                 <p>contato@forfarmdocs.com</p>
                 <p><a target="_blank" href="tel:+55-62-99674-5628">(62) 99674-5628</a></p>
             </div>
@@ -311,7 +312,13 @@
 
     </a>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+        {
+            duration: 1500,
+        });
+      </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
